@@ -1,0 +1,144 @@
+.service {
+    width: 100%;
+}
+
+.service__wrap {
+    padding: 8rem 0;
+}
+
+.service__title {
+    padding-bottom: 6.3rem;
+}
+
+.service__page {
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.service__body {
+    margin-left: 7rem;
+    -ms-flex: 0 1 55%;
+    flex: 0 1 55%;
+}
+
+.service__bc {
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+}
+
+.service__bc img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.service__name {
+    font-size: 2.2rem;
+    margin-bottom: 3.8rem;
+}
+
+.service__text {
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+}
+
+.service__text li {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 2.4rem;
+}
+
+.service__text-icon li {
+    background: url("../images/vector.png") 0 4px no-repeat;
+    padding-left: 2.5rem;
+}
+
+.service__triger {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 3.2rem;
+}
+
+.service__triger-mobile {
+    display: none;
+}
+
+.service__column span {
+    display: block;
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+    line-height: 2rem;
+}
+
+.service__button {
+    display: block;
+    padding: 1.8rem 4.6rem;
+    margin-top: 5.5rem;
+    margin-left: auto;
+    max-width: 245px;
+}
+
+@media screen and (max-width: 887px) {
+    .service__page {
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .service__body {
+        margin-left: 0;
+    }
+
+    .service__column {
+        -ms-flex: 0 1 25%;
+        flex: 0 1 25%;
+        text-align: center;
+    }
+
+    .service__button {
+        display: none;
+    }
+
+    .service__triger-wrap::before {
+        display: block;
+        content: "";
+        width: 140px;
+        height: 2px;
+        background-color: #03436a;
+    }
+
+    .service__bc {
+        margin-bottom: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .service__title {
+        padding-bottom: 2rem;
+    }
+
+    .service__name {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+
+    .service__text p {
+        font-size: 1.4rem;
+    }
+
+    .service__triger {
+        display: block;
+    }
+
+    .service__triger-wrap::before {
+        display: none;
+    }
+
+    .service__column {
+        padding: 2rem 8.2rem;
+    }
+}

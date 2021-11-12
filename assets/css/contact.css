@@ -1,0 +1,136 @@
+.contact {
+    width: 100%;
+}
+
+.contact__wrap {
+    padding: 8rem 0;
+    font-size: 1.6rem;
+}
+
+.contact__page {
+    margin-top: 3rem;
+}
+
+.contact__column {
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+}
+
+.contact__name {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.contact__name small {
+    font-size: 1.4rem;
+}
+
+.contact__block {
+    margin: 4.7rem 1rem 0 0;
+}
+
+.contact__block--row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 2.4rem;
+}
+
+.contact__block--row + .contact__block--row {
+    margin-top: 4rem;
+}
+
+.contact__block--row img {
+    margin-right: 3rem;
+}
+
+.contact__block--row-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact__block--row-wrap:first-child {
+    margin-right: 5rem;
+}
+
+.form__input {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background: none;
+    padding: 1.6rem 0 1.6rem 2.8rem;
+    width: 100%;
+    max-width: 470px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.form__input-text {
+    padding: 1.2rem 0 4.7rem 2.8rem;
+    height: 84px;
+}
+
+.form__button {
+    padding: 1.8rem 16.2rem;
+    margin-top: 1rem;
+}
+
+.form__conf {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 887px) {
+    .contact__wrap {
+        display: block;
+    }
+
+    .contact__page {
+        margin-bottom: 6.5rem;
+    }
+
+    .contact__column {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+
+    .form__input {
+        max-width: 100%;
+    }
+
+    .form__button {
+        width: 100%;
+        padding: 1.6rem 0;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .contact__wrap {
+        font-size: 1.4rem;
+    }
+
+    .contact__block {
+        margin: 4.7rem 0 0 0;
+    }
+
+    .contact__block--row + .contact__block--row {
+        margin-top: 1.8rem;
+    }
+
+    .contact__block--row img {
+        margin-right: 1.5rem;
+    }
+
+    .contact__block--row-wrap + .contact__block--row-wrap {
+        margin-top: 1.8rem;
+    }
+
+    .contact__block--row-flex {
+        display: block;
+    }
+
+    .contact__name small {
+        margin-top: 0.5rem;
+        display: block;
+    }
+}
